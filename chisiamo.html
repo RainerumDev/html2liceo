@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tappeti Online">
+    <meta name="description" content="Scopri chi siamo e cosa facciamo">
+    <meta name="keywords" content="tappeti, vendita, casa, arredamento">
+    <title>Tappeti Online - Chi siamo</title>
+
+    <!-- Vano tentativo di impedire la copiatura spudorata -->
+    <script>
+        document.addEventListener("keydown", function (event){
+            if (event.ctrlKey){
+            event.preventDefault();
+            }
+            if(event.keyCode == 123){
+            event.preventDefault();
+            }
+        });
+        document.addEventListener('contextmenu', 
+            event => event.preventDefault()
+        );
+    </script>
+</head>
+<body>
+    <!-- Intestazione del sito -->
+    <header>
+        <h1>Tappeti Online</h1>
+        <p>Il miglior sito per acquistare tappeti di alta qualità!</p>
+        <nav>
+            <ol type="A">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="index.html#prodotti">Prodotti</a></li>
+                <li><a href="info/contatti.html">Contatti</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Sezione "Chi siamo" -->
+    <section id="chi-siamo">
+        <h2>Chi siamo</h2>
+        <p>Siamo un'azienda specializzata nella vendita di tappeti da oltre 20 anni. Offriamo prodotti di alta qualità provenienti da diverse parti del mondo. Il nostro obiettivo è fornire tappeti che aggiungano stile e comfort alla tua casa.</p>
+    </section>
+
+    <!-- Piè di pagina -->
+    <footer>
+        <p>&copy; 2024 Tappeti Online - Tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>

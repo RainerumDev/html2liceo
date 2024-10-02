@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tappeti Online">
+    <meta name="description" content="Scopri chi siamo e cosa facciamo">
+    <meta name="keywords" content="tappeti, vendita, casa, arredamento">
+    <title>Tappeti Online - Vendita di tappeti</title>
+
+
+    <!-- Vano tentativo di impedire la copiatura spudorata -->
+    <script>
+        document.addEventListener("keydown", function (event){
+            if (event.ctrlKey){
+            event.preventDefault();
+            }
+            if(event.keyCode == 123){
+            event.preventDefault();
+            }
+        });
+        document.addEventListener('contextmenu', 
+            event => event.preventDefault()
+        );
+    </script>
+</head>
+<body>
+    <!-- Intestazione del sito -->
+    <header>
+        <h1>Tappeti Online</h1>
+        <p>Il miglior sito per acquistare tappeti di alta qualità!</p>
+        <nav>
+            <ul>
+                <li><a href="#prodotti">Prodotti</a></li>
+                <li><a href="chisiamo.html">Chi siamo</a></li>
+                <li><a href="info/contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione dei prodotti -->
+    <section id="prodotti">
+        <h2>I nostri tappeti</h2>
+        <p>Scopri la nostra selezione di tappeti disponibili per l'acquisto:</p>
+
+        <table>
+            <tr>
+                <td>
+                    <h3>Tappeto Orientale</h3>
+                </td>
+                <td>
+                    <h3>Tappeto Moderno</h3>
+                </td>
+                <td>
+                    <h3>Tappeto Classico</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://via.placeholder.com/300" alt="Tappeto orientale">
+                </td>
+                <td>
+                    <img src="https://via.placeholder.com/300" alt="Tappeto moderno">
+                </td>
+                <td>
+                    <img src="https://via.placeholder.com/300" alt="Tappeto classico">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Prezzo: €150,00</p>
+                </td>
+                <td>
+                    <p>Prezzo: €100,00</p>
+                </td>
+                <td>
+                    <p>Prezzo: €120,00</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Un bellissimo tappeto <b>orientale</b><br/>fatto a mano con disegni unici.</p>
+                </td>
+                <td>
+                    <p>Perfetto per ambienti moderni e<br/><i>minimalisti</i>, disponibile in diversi colori.</p>
+                </td>
+                <td>
+                    <p>Un tappeto dal design <u>classico</u><br/>che si adatta a qualsiasi ambiente.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Piè di pagina -->
+    <footer>
+        <p>&copy; 2024 Tappeti Online - Tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>
