@@ -89,6 +89,53 @@
         </table>
     </section>
 
+    <!-- Sezione delle recensioni -->
+    <section id="recensioni">
+        <h2>Recensioni dei nostri clienti</h2>
+        <p>Leggi cosa dicono i nostri clienti dei nostri tappeti:</p>
+        
+        <ul id="lista-recensioni">
+            <li>
+                <h3>Luca</h3>
+                <p>Ho acquistato un tappeto orientale per il mio salotto e sono rimasto molto soddisfatto della qualità del prodotto.</p>
+            </li>
+            <li>
+                <h3>Giulia</h3>
+                <p>Il tappeto moderno che ho acquistato è perfetto per il mio soggiorno, lo consiglio a tutti!</p>
+            </li>
+            <li>
+                <h3>Marco</h3>
+                <p>Il tappeto classico che ho acquistato è di ottima qualità e si adatta perfettamente al mio arredamento.</p>
+            </li>
+        </ul>
+
+        <h2>Lascia una recensione</h2>
+        <p>Se hai acquistato un tappeto da noi, lascia una recensione per aiutare altri clienti:</p>
+        <form action="" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br/>
+            <label for="recensione">Recensione:</label>
+            <textarea id="recensione" name="recensione" required></textarea>
+            <br/>
+            <input type="submit" value="Invia">
+        </form>
+
+        <!-- In teoria questo non lo sanno fare -->
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const nome = urlParams.get('nome');
+            const recensione = urlParams.get('recensione');
+            if (nome && recensione) {
+                const listaRecensioni = document.getElementById('lista-recensioni');
+                const nuovaRecensione = document.createElement('li');
+                nuovaRecensione.innerHTML = `<h3>${nome}</h3><p>${recensione}</p>`;
+                listaRecensioni.appendChild(nuovaRecensione);
+            }
+        </script>
+
+    </section>
+
     <!-- Piè di pagina -->
     <footer>
         <p>&copy; 2024 Tappeti Online - Tutti i diritti riservati</p>
